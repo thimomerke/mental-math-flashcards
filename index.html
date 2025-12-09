@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Math Flash Cards</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Mental Math Practice</h1>
+        </header>
+        
+        <div class="flash-card" id="flashCard">
+            <div class="card-front" id="cardFront">
+                <div class="question-container">
+                    <p class="question-label">Question:</p>
+                    <h2 class="question" id="question">Loading...</h2>
+                </div>
+                <button class="reveal-btn" id="revealBtn">Show Answer</button>
+            </div>
+            
+            <div class="card-back" id="cardBack" style="display: none;">
+                <div class="answer-container">
+                    <p class="question-label">Question:</p>
+                    <p class="question-text" id="questionText"></p>
+                    <p class="answer-label">Answer:</p>
+                    <h2 class="answer" id="answer"></h2>
+                </div>
+                <button class="next-btn" id="nextBtn">Next Question</button>
+            </div>
+        </div>
+        
+        <div class="stats">
+            <span>Questions answered: <strong id="questionCount">0</strong></span>
+        </div>
+        <div class="legal-link">
+            <span><a href="https://thimo.me/legal" target="_blank">Legal Information</a></span>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
+
