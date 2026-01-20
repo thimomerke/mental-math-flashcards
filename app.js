@@ -208,7 +208,7 @@ function pattern11() {
     const b = randomRoundPercent(5, 25);
     const answer = P * (1 - a / 100) * (1 + b / 100);
     return {
-        question: `A product costs $${P}. Its prce gets reduced by ${a}% during an offer, then increased by ${b}%. What is its final price?`,
+        question: `A product costs $${P}. Its price gets reduced by ${a}% during an offer, then increased by ${b}%. What is its final price?`,
         answer: Math.round(answer * 100) / 100
     };
 }
